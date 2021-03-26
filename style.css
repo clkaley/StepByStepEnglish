@@ -1,0 +1,272 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #dbe2ef;
+}
+
+
+/*header */
+
+header {
+    background-color: #112d4e;
+    font-size: 2rem;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    height: 80px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a {
+    padding: 0.7rem;
+    margin-right: 2rem;
+    color: e45826;
+}
+
+#navbar a:hover {
+    background-color: #3f72af;
+    border-radius: 0.5rem;
+}
+
+
+/*HOME*/
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+#home img {
+    max-width: 100%;
+    max-height: 50rem;
+    margin: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.text-center h1 {
+    font-size: 2.5rem;
+    color: #112d4e;
+    margin: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.text-center p {
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: #dbe2ef;
+    word-spacing: 1rem;
+    padding-bottom: 3rem;
+}
+
+
+/*COURSES*/
+
+#courses {
+    background-color: #dbe2ef;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+    padding: 2rem;
+    color: #03506f;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.courses .course {
+    display: flex;
+    margin: 2rem;
+}
+
+#courses h3 {
+    color: #03506f;
+}
+
+#courses img {
+    max-width: 70rem;
+    max-height: 70rem;
+    margin-top: 2rem;
+    object-fit: cover;
+}
+
+span {
+    font-size: large;
+}
+
+.course_info {
+    margin-left: 2rem;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.instructor {
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+
+/*ABOUT US*/
+
+#about {
+    height: auto;
+    background-color: #f6f5f5;
+    color: #28527a;
+}
+
+#about h3 {
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+#about p {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.social_media {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social_icon a:hover {
+    color: #d3e0ea;
+}
+
+
+/*Contact */
+
+#contact {
+    background-color: #112d4e;
+    height: auto;
+    color: #f6f5f5;
+    padding: 2rem;
+}
+
+#contact h4 {
+    font-size: 3rem;
+}
+
+.form_group {
+    padding: 2rem;
+}
+
+.form_group label {
+    display: block;
+}
+
+.form_group {
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+::placeholder {
+    color: #276678;
+}
+
+input[type=text] {
+    border: 2px solid #f6f5f5;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #f6f5f5;
+    border: none;
+    color: #112d4e;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 70rem;
+}
+
+@media only screen and (max-width:768px) {
+    /*tabletler için */
+    .courses .course {
+        flex-direction: column;
+    }
+    #about {
+        height: auto;
+    }
+    .title {
+        margin-top: 1rem;
+    }
+    .course_info {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn {
+        margin-left: 25rem;
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    /*mobile  için */
+    #navbar {
+        flex-direction: column;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        overflow: hidden;
+        /*taşmayı engellemek için */
+    }
+    .courses .course {
+        flex-direction: column;
+    }
+    #about {
+        height: auto;
+    }
+    .title {
+        margin-top: 1rem;
+    }
+    .course_info {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn {
+        margin-left: 18rem;
+        width: 25%;
+    }
+}
